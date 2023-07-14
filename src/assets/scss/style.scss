@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.6.2 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 
 @import "functions";
 @import "variables";
@@ -42,3 +37,49 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+
+.brand-text-icon {
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+header {
+  position: relative;
+  border-bottom: 1px solid $gray-200;
+  width: 100%;
+  margin-bottom: 70px;
+
+  .navbar {
+    height: 80px;
+
+    ul.navbar-nav {
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            color: $primary;
+          }
+        }
+
+        a {
+          &.nav-link {
+            color: $gray-900;
+            letter-spacing: 2px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
